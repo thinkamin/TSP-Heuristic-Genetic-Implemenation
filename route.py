@@ -17,18 +17,18 @@ class Route(object):
         for x in range(len(a)):
             if a[x] == b[x]:
                 newOrder[x] = a[x]
-        CITIESLEFT = []
+        citiesLeft = []
         for x in range(len(newOrder)):
             if newOrder[x] == []:
-                if a[x] not in CITIESLEFT:
-                    CITIESLEFT.append(a[x])
-                if b[x] not in CITIESLEFT:
-                    CITIESLEFT.append(b[x])
-        CITIESLEFT = self.shuffle(CITIESLEFT)
+                if a[x] not in citiesLeft:
+                    citiesLeft.append(a[x])
+                if b[x] not in citiesLeft:
+                    citiesLeft.append(b[x])
+        citiesLeft = self.shuffle(citiesLeft)
         for x in range(len(newOrder)):
             if newOrder[x] == []:
-                newOrder[x] = CITIESLEFT[0]
-                del CITIESLEFT[0]
+                newOrder[x] = citiesLeft[0]
+                del citiesLeft[0]
         return newOrder
     # randomly shuffle a list. Processing does not offer this function natively even though it's offered by Python
     def shuffle(self,l):
