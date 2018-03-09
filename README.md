@@ -7,3 +7,5 @@ Designed and coded by Kyle Thorpe, 2018
 1. Download the Python Processing. http://py.processing.org/tutorials/gettingstarted/
 2. When Processing is running and in Python mode, open salesman.pyde
 3. Click run
+
+<img src="tsp.gif" alt="GIF" title="Preview of Program" />
