@@ -10,7 +10,7 @@ height = 1280
 # how much space between the edge of the screen and a possible city being randomly placed there
 border = 40
 # amount of cities to randomly generate
-cities = 23
+cities = 15
 # a list containing lists. each list is indexed as [x,y,id] where x and y are the coordinates and id is the id of the city
 cities_pos = []
 # the current population of routes. intitialized in setup()
